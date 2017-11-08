@@ -1,0 +1,35 @@
+{
+	"name": "check-mate",
+	"version": "0.0.0",
+	"description": "Your mate to check files or modules exist in your project",
+	"license": "MIT",
+	"repository": "gtrufitt/check-mate",
+	"author": {
+		"name": "Gareth Trufitt",
+		"email": "gareth.trufitt@guardian.co.uk",
+		"url": "trufitt.com"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		""
+	],
+	"dependencies": {
+		"meow": "^3.7.0"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.18.2"
+	}
+}
