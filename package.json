@@ -9,7 +9,8 @@
     "email": "gareth.trufitt@guardian.co.uk",
     "url": "trufitt.com"
   },
-  "main": "cli.js",
+  "module": "cli.js",
+  "main": "dist/cli.js",
   "bin": "dist/cli.js",
   "engines": {
     "node": ">=4"
@@ -17,7 +18,8 @@
   "scripts": {
     "test": "xo && ava",
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "release": "npm run build && npm version patch && npm publish"
   },
   "files": [
     "index.js",
