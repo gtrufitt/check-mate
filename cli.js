@@ -1,2 +1,24 @@
-var e=require("chalk"),o=require("./mates.js"),n=function(o){return o.map(function(o){return console.log(e.green(o))})},r=function(o){Promise.all(o.checkers.map(function(e){return e(o)})).then(function(r){console.log(" "),console.log(" "),console.log(e.bold.blueBright("Checks for "+o.humanName)),n(r)})};module.exports=function(e,n){if("object"!=typeof e)throw new TypeError("Expected an object, got "+typeof e);n=n||{},o.map(r)};
-//# sourceMappingURL=cli.js.map
+#!/usr/bin/env node
+'use strict';
+const meow = require('meow');
+const checkMate = require('.');
+const chalk = require('chalk');
+
+const cli = meow(`
+	Usage
+	  $ check-mate [input]
+
+	Options
+	  --foo  Lorem ipsum [Default: false]
+
+	Examples
+	  $ check-mate
+	  // Will check the default files
+	  $ check-mate ./my-files
+	  // Will merge custom file set with default set
+`);
+
+console.log(chalk.green('Hey!'));
+console.log(chalk.green('Checking...'));
+
+checkMate(cli.input[0] || {});
