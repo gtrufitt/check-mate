@@ -6,16 +6,12 @@ const chalk = require('chalk');
 
 const cli = meow(`
 	Usage
-	  $ check-mate [input]
-
-	Options
-	  --foo  Lorem ipsum [Default: false]
+	  $ check-mate
+		// Run on a project folder
 
 	Examples
 	  $ check-mate
-	  // Will check the default files
-	  $ check-mate ./my-files
-	  // Will merge custom file set with default set
+	  // Will check the default files exist
 `);
 
 console.log(chalk.green('Hey!'));
