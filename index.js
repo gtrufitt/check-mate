@@ -1,7 +1,7 @@
 'use strict';
 
 const chalk = require('chalk');
-const checkFiles = require('./mates.js');
+const checkFiles = require('./lib/mates');
 
 const logAll = messages => messages.map(message => console.log(chalk.green(message)));
 
