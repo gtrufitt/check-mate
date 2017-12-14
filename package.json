@@ -18,8 +18,8 @@
   },
   "files": [
     "index.js",
-   "cli.js",
-   "lib"
+    "cli.js",
+    "lib"
   ],
   "keywords": [
     "cli-app",
