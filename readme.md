@@ -4,6 +4,8 @@
 
 *Note:* WIP, pretty messy codebase...
 
+![CLI](cli.jpg)
+
 ## CLI
 
 ```
@@ -52,10 +54,19 @@ You can then use this in the `lib/mates.js` file, by adding an object, with your
 
 As above, you can add mates in the `lib/mates.js`. Mates should have a `humanName` that'll be used in the check title (`Checks for *Linting*`) and then some 'checker' specific properties (checkers use destructuring to grab the ones they want).
 
+### Publish
+
+`npm i -g np`
+
+then
+
+`np <versionType>`
+
 ## TODO
 
 - Lint
 - Choose to not show the message if something doesn't exist?
+- Custom checkers as an option / override defaults
 
 ## License
 
