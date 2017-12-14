@@ -1,6 +1,6 @@
 {
   "name": "check-mate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Your mate to check files or modules exist in your project",
   "license": "MIT",
   "repository": "gtrufitt/check-mate",
