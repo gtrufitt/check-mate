@@ -28,7 +28,8 @@
   ],
   "dependencies": {
     "chalk": "^2.3.0",
-    "meow": "^3.7.0",
+    "fs-find": "^0.4.0",
+    "meow": "^4.0.0",
     "read-package-json": "^2.0.12"
   },
   "devDependencies": {
